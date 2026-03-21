@@ -60,15 +60,15 @@ pip install -r requirements.txt
 ### 4\. Run the Application
 
 ```bash
-streamlit run webapp.py
+streamlit run app.py
 ```
 
 ## 📂 Project Structure
 
 ```text
-├── webapp.py              # Main Streamlit application
+├── app.py              # Main Streamlit application
 ├── requirements.txt       # Project dependencies
-├── amazon_data.pkl        # Cleaned dataset (Serialized)
+├── amazon_data.csv.gz       # Cleaned dataset (Serialised)
 ├── svd_model.pkl          # Trained Collaborative Filtering model
 ├── cosine_sim.pkl         # Content-Based Similarity matrix
 ├── indices.pkl            # Product name mapping
