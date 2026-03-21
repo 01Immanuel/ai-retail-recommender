@@ -21,9 +21,9 @@ st.write("Optimizing product discovery using Hybrid AI (SVD + Content-Based Filt
 @st.cache_resource
 def load_assets():
     # Loading the CSV instead of Pickle for better stability
-    df = pd.read_csv('amazon_cleaned.csv')
+    df = pd.read_csv('amazon_data.csv.gz')
     
-    # Loading the serialized AI models
+    # Loading the serialised AI models
     with open('svd_model.pkl', 'rb') as f:
         svd = pickle.load(f)
     with open('cosine_sim.pkl', 'rb') as f:
